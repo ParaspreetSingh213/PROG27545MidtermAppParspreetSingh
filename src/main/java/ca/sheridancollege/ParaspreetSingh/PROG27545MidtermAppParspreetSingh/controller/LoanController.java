@@ -1,7 +1,7 @@
-package ca.sheridancollege.yourname.controller;
+package ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.controller;
 
-import ca.sheridancollege.yourname.model.LoanApplication;
-import ca.sheridancollege.yourname.service.LoanService;
+import ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.model.LoanApplication;
+import ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.service.LoanService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

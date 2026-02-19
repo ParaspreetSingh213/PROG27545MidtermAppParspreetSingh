@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Prog27545MidtermAppParspreetSinghApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Prog27545MidtermAppParspreetSinghApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(Prog27545MidtermAppParspreetSinghApplication.class, args);
+    }
 }

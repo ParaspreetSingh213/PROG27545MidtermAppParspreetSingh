@@ -1,4 +1,4 @@
-package ca.sheridancollege.yourname.service;
+package ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.service;
 
 import org.springframework.stereotype.Service;
 

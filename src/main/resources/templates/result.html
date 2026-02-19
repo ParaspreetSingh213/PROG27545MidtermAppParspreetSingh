@@ -2,18 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Result</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 
-<h2>Loan Decision Summary</h2>
+<div class="card">
+    <h2>Loan Decision Summary</h2>
 
-<p>DTI: <span th:text="${dti}"></span>%</p>
-<p>Monthly Payment: $<span th:text="${payment}"></span></p>
+    <p><strong>DTI:</strong> <span th:text="${dti}"></span>%</p>
+    <p><strong>Monthly Payment:</strong> $<span th:text="${payment}"></span></p>
 
-<h3 th:if="${approved}" style="color:green">Loan Approved</h3>
-<h3 th:if="${!approved}" style="color:red">Loan Rejected</h3>
+    <p th:if="${approved}" class="approved">Loan Approved</p>
+    <p th:if="${!approved}" class="rejected">Loan Rejected</p>
 
-<a href="/apply">Apply Again</a>
+    <a href="/apply">Apply Again</a>
+</div>
 
 </body>
 </html>
