@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Result</title>
 </head>
 <body>
+
+<h2>Loan Decision Summary</h2>
+
+<p>DTI: <span th:text="${dti}"></span>%</p>
+<p>Monthly Payment: $<span th:text="${payment}"></span></p>
+
+<h3 th:if="${approved}" style="color:green">Loan Approved</h3>
+<h3 th:if="${!approved}" style="color:red">Loan Rejected</h3>
+
+<a href="/apply">Apply Again</a>
 
 </body>
 </html>

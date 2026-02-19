@@ -1,32 +1,29 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Loan Form</title>
-</head>
-<body>
-
-<h2>Loan Application Form</h2>
-
-<form action="/result" method="post">
+<form th:action="@{/result}" th:object="${loanApplication}" method="post">
 
     <label>Annual Income:</label>
-    <input type="number" name="annualIncome"><br><br>
+    <input type="number" th:field="*{annualIncome}">
+    <p th:if="${#fields.hasErrors('annualIncome')}"
+       th:errors="*{annualIncome}" style="color:red"></p>
 
     <label>Monthly Expenses:</label>
-    <input type="number" name="monthlyExpenses"><br><br>
+    <input type="number" th:field="*{monthlyExpenses}">
+    <p th:if="${#fields.hasErrors('monthlyExpenses')}"
+       th:errors="*{monthlyExpenses}" style="color:red"></p>
 
     <label>Loan Amount:</label>
-    <input type="number" name="loanAmount"><br><br>
+    <input type="number" th:field="*{loanAmount}">
+    <p th:if="${#fields.hasErrors('loanAmount')}"
+       th:errors="*{loanAmount}" style="color:red"></p>
 
-    <label>Loan Term (Years):</label>
-    <input type="number" name="loanTerm"><br><br>
+    <label>Loan Term:</label>
+    <input type="number" th:field="*{loanTerm}">
+    <p th:if="${#fields.hasErrors('loanTerm')}"
+       th:errors="*{loanTerm}" style="color:red"></p>
 
     <label>Credit Score:</label>
-    <input type="number" name="creditScore"><br><br>
+    <input type="number" th:field="*{creditScore}">
+    <p th:if="${#fields.hasErrors('creditScore')}"
+       th:errors="*{creditScore}" style="color:red"></p>
 
     <button type="submit">Submit</button>
-
 </form>
-
-</body>
-</html>
