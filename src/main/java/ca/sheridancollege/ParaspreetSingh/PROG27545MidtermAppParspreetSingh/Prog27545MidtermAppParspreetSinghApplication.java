@@ -1,3 +1,5 @@
+// Main Page
+
 package ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh;
 
 import org.springframework.boot.SpringApplication;

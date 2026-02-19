@@ -1,3 +1,5 @@
+// LoanApplication
+
 package ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.model;
 
 import jakarta.validation.constraints.*;

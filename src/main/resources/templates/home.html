@@ -2,16 +2,56 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Home</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            width: 420px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #4e73df;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4e73df;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        p {
+           font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #2e59d9;
+        }
+    </style>
 </head>
 <body>
 
 <div class="card">
     <h1>Loan Application System</h1>
-
-    <p style="text-align:center;">Paraspreet Singh</p>
-    <p style="text-align:center;">Student Number: YOUR STUDENT NUMBER</p>
-
+    <p>Paraspreet Singh</p>
+    <p>Student Number: 991799793</p>
     <a href="/apply">Apply for Loan</a>
 </div>
 

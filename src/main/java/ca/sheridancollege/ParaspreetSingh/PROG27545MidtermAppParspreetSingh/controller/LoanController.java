@@ -1,3 +1,5 @@
+// LoanController
+
 package ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.controller;
 
 import ca.sheridancollege.ParaspreetSingh.PROG27545MidtermAppParspreetSingh.model.LoanApplication;
